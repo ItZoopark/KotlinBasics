@@ -147,4 +147,55 @@ fun main() {
 //    println(second)
 
 //    println(List(25){ 0 })
+
+    // Разминочный пример
+    listOf(1, 3, 3, 2, 4, 1)
+        //missed operator
+        .let { println(it) }//=1
+
+    // Задача 1
+    listOf(1, 3, 3, 2, 4, 1)
+        //missed operator
+        .let { println(it) }//=6
+
+    // Задача 2
+    listOf(1, 3, 3, 2, 4, 1)
+        //missed operator
+        .sum()
+        .let { println(it) }//=5
+
+    // Задача 3
+    listOf(1, 3, 3, 2, 4, 1)
+        //missed operator
+        .sum()
+        .let { println(it) }//=14
+
+    // Задача 4
+    listOf(1, 3, 3, 2, 4, 1)
+        //missed operator
+        .average()
+        .let { println(it) }//=2.5
+
+    // Задача 5
+    listOf(1, 3, 3, 2, 4, 1)
+        //missed operator
+        .average()
+        .let { println(it) }//=8.0
+
+    // Задача 6
+    listOf(1, 3, 3, 2, 4, 1)
+        //missed operator
+        .sum()
+        .let { println(it) }//=8
+
+    // Задача 7
+    listOf(1, 3, 3, 2, 4, 1)
+        //missed operator
+        .let { println(it) }//=72
+
+    // Задача 10
+    listOf(1, 3, 3, 2, 4, 1)
+        //missed operator
+        .sum()
+        .let { println(it) }//=15
 }
