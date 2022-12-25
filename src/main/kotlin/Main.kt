@@ -1,3 +1,4 @@
+import kotlin.math.pow
 import kotlin.reflect.typeOf
 
 fun main() {
@@ -150,53 +151,79 @@ fun main() {
 
 
     // Разминочный пример
-    listOf(1, 3, 3, 2, 4, 1)
-        .last()
-        .let { println(it) }//=1
+//    listOf(1, 3, 3, 2, 4, 1)
+//        .last()
+//        .let { println(it) }//=1
+//
+//    // Задача 1
+//    listOf(1, 3, 3, 2, 4, 1)
+//        .count()
+//        .let { println(it) }//=6
+//
+//    // Задача 2
+//    listOf(1, 3, 3, 2, 4, 1)
+//        .takeLast(2)
+//        .sum()
+//        .let { println(it) }//=5
+//
+//    // Задача 3
+//    listOf(1, 3, 3, 2, 4, 1)
+//        .map { it }
+//        .sum()
+//        .let { println(it) }//=14
+//
+//    // Задача 4
+//    listOf(1, 3, 3, 2, 4, 1)
+//        .distinct()
+//        .average()
+//        .let { println(it) }//=2.5
+//
+//    // Задача 5
+//    listOf(1, 3, 3, 2, 4, 1)
+//        .map { 8 }
+//        .average()
+//        .let { println(it) }//=8.0
+//
+//    // Задача 6
+//    listOf(1, 3, 3, 2, 4, 1)
+//        .filter { it % 2 == 1 }
+//        .sum()
+//        .let { println(it) }//=8
+//
+//    // Задача 7
+//    listOf(1, 3, 3, 2, 4, 1)
+//        .fold(1){ total, next -> total * next }
+//        .let { println(it) }//=72
+//
+//    // Задача 10
+//    listOf(1, 3, 3, 2, 4, 1)
+//        .indices
+//        .sum()
+//        .let { println(it) }//=15
 
-    // Задача 1
-    listOf(1, 3, 3, 2, 4, 1)
-        .count()
-        .let { println(it) }//=6
-
-    // Задача 2
-    listOf(1, 3, 3, 2, 4, 1)
-        .takeLast(2)
-        .sum()
-        .let { println(it) }//=5
-
-    // Задача 3
-    listOf(1, 3, 3, 2, 4, 1)
-        .map { it }
-        .sum()
-        .let { println(it) }//=14
-
-    // Задача 4
-    listOf(1, 3, 3, 2, 4, 1)
-        .distinct()
-        .average()
-        .let { println(it) }//=2.5
-
-    // Задача 5
-    listOf(1, 3, 3, 2, 4, 1)
-        .map { 8 }
-        .average()
-        .let { println(it) }//=8.0
-
-    // Задача 6
-    listOf(1, 3, 3, 2, 4, 1)
-        .filter { it % 2 == 1 }
-        .sum()
-        .let { println(it) }//=8
-
-    // Задача 7
-    listOf(1, 3, 3, 2, 4, 1)
-        .fold(1){ total, next -> total * next }
-        .let { println(it) }//=72
-
-    // Задача 10
-    listOf(1, 3, 3, 2, 4, 1)
-        .indices
-        .sum()
-        .let { println(it) }//=15
+    // Словари-------------------------------
+//    val cities = listOf("Москва", "Волгоград", "Воронеж")
+//    println(cities.indices)
+//    println(cities[0])
+//    val citiesMap = mutableMapOf("Москва" to 2561.0, "Волгоград" to 859.0, "Воронеж" to 596.51)
+//    println(citiesMap["Москваg"])
+//    println(citiesMap.getOrDefault("Москвар", "нет"))
+//    println(citiesMap.containsKey("Москва"))
+//    println(citiesMap.containsValue(2561.0))
+//    println(citiesMap.map { it.key.uppercase() })
+//    println(citiesMap.map { (it.value * 1000.0.pow(2.0)).toString() + "м^2" })
+//    println(citiesMap.keys)
+//    println(citiesMap.values)
+//    citiesMap["Москва"] = 3000.0
+//    citiesMap["Санкт-Петербург"] = 1439.0
+//    println(citiesMap)
+//    citiesMap += "Казань" to 425.0
+////    citiesMap += "Казань" to 500.0
+//    println(citiesMap)
+//    println(citiesMap.filter { it.value > 1000 })
+//    println(citiesMap.filter { it.key.startsWith("В") })
+//    println()
+//    println(citiesMap)
+//    println(citiesMap.toSortedMap())
+//    println(citiesMap.toList().sortedBy { it.second }.toMap())
 }
