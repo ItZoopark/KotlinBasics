@@ -48,21 +48,25 @@ class Money(
 fun main() {
     val money2 = Money(90, 70)
     val money1 = Money(90, 70)
-    val money3 = money1.copy()
-    println(money1.toString())
-    println(money3.toString())
-    println(money2.toString())
+//    val money3 = money1.copy()
+//    println(money1.toString())
+//    println(money3.toString())
+//    println(money2.toString())
+//
+//    println(money1 == money2)
+//    println(money1 == money3)
+    val minus = Money.minus(money1, money2)
+    minus.show()
+    println(minus.toString())
+    money1.plus(money2)
+    money1.show()
+    money1.minus(money2).show()
+    money2.minus(money1).show()
+    money2.multiply(2).show()
 
-    println(money1 == money2)
-    println(money1 == money3)
-//    val minus = Money.minus(money1, money2)
-//    minus.show()
-//    println(minus.toString())
-//    money1.plus(money2)
-//    money1.show()
-//    money1.minus(money2).show()
-//    money2.minus(money1).show()
-//    money2.multiply(2).show()
 
-
+// ДЗ: Создать класс Fraction: numerator, denominator
+    // методы: сложение, вычитание, умножение, деление, возведение в степень, сокращение (2/1024 -> 1/512)...
+//    f1.plus(f2)
+//    Fraction.sum(f1, f2)
 }
